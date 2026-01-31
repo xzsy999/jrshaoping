@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>扫码获取</title>
+</head>
+<body>
+    <h2>扫码获取的内容</h2>
+    <div style="background:#f5f5f5; padding:20px; border-radius:10px;">
+#九如山 #九如山冰瀑拍出冬日浪漫 #济南好玩的地方 #济南旅游攻略    </div>
+    <button onclick="copyText()" style="background:green; color:white; padding:15px; border:none; border-radius:5px; margin-top:20px; font-size:18px; width:100%;">
+        点击复制
+    </button>
+    
+    <script>
+    function copyText() {
+        var text = "微信客服: service123\n电话: 13800000000\n服务时间: 9:00-18:00";
+        navigator.clipboard.writeText(text).then(function() {
+            alert("已复制到剪贴板");
+        });
+    }
+    </script>
+</body>
+</html>
